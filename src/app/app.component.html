@@ -1,41 +1,211 @@
-<!--BOOTSTRAP-->
-<button md-raised-button color="primary" (click)="openModal()">PRIMARY</button>
-<button md-raised-button color="accent">ACCENT</button>
-<button md-raised-button color="warn">WARN</button>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"><img src="../../public/images/logo.png"></a>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" (click)="openModal()">
-    Launch demo modal
-</button>
+        <ul class="right hide-on-med-and-down" style="background-color: #0089ec; color:#fff;">
+            <li><a href="#"><i class="material-icons md-48">face</i></a></li>
+            <li><a href="#">Methodology</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal1">
-    Launch direct modal
-</button>
-<i class="material-icons">folder</i>
+        <ul id="nav-mobile" class="side-nav" style="background-color: #0089ec; color:#fff;">
+            <li><a href="/admin">Backend</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="icon-list"></i></a>
+    </div>
+</nav>
 
-<md-radio-group>
-    <md-radio-button >1</md-radio-button>
-    <md-radio-button >2</md-radio-button>
-</md-radio-group>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <div class="row">
 
-<md-checkbox [checked]="false" aria-label="My standalone checkbox"></md-checkbox>
+                <div class="col l4">
 
-<!-- Modal -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h1 class="header center">MEAN.js</h1>
+                    <div class="row center">
+                        <h5 class="header col s12">Creating my personal page with stack MEAN.js, you can found my skills in action</h5>
+                    </div>
+                    <div class="row center">
+                        <a href="../../public/cv.pdf" class="waves-effect waves-light btn-large">Who i am?</a>
+                    </div>
+                </div>
+
+                <div class="slider col l8 hide-on-med-and-down">
+                    <ul class="slides">
+                        <li>
+                            <img src="../../public/images/home/dota.jpg"> <!-- random image -->
+                            <div class="caption center-align">
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../public/images/home/word2.jpg"> <!-- random image -->
+                            <div class="caption left-align">
+                                <h3 class="light grey-text text-lighten-4">[CMG]Dota_League</h3>
+                                <h5 class="light grey-text text-lighten-2">Show stats and information of dota.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../public/images/home/word3.jpg"> <!-- random image -->
+                            <div class="caption right-align">
+                                <h3 class="light grey-text text-lighten-4">Call of Duty</h3>
+                                <h5 class="light grey-text text-lighten-2">Modern War Far 3. Shooter game</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="modal-body">
-                ...
+            <br><br>
+
+
+
+        </div>
+    </div>
+    <div class="parallax"><img src="../../public/images/home/background1.jpg" alt="Unsplashed background img 1"/></div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../../public/images/home/dota3.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../../public/images/home/dota.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../../public/images/home/dota2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
             </div>
         </div>
     </div>
+    <div class="parallax"><img src="../../public/images/home/background2.jpg" alt="Unsplashed background img 2"></div>
 </div>
+
+<div class="container">
+    <div class="section">
+        <div class="card-panel hoverable">
+            <div class="row">
+
+                <div class="col s12 center">
+                    <h4 class="cyan-text" >Contact me by E-Mail</h4>
+                    <div class="input-field col l6 s12">
+                        <input id="nickname" type="text" class="validate">
+                        <label for="nickname"><i class="icon-user-2"></i> Nick Name</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <input id="email" type="text" class="validate">
+                        <label for="email"><i class="icon-mail-2"></i> Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1"><i class="icon-pencil-5"></i> Message here.</label>
+                    </div>
+                    <a href="" id="download-button" class="waves-effect waves-light btn right"> Send Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="../../public/images/home/background3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+
+<footer class="page-footer cyan">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="gray-darken-3-text">Cervantes's page</h5>
+                <p class="white-text text-lighten-4">In this page I'll show my jobs and present projects, in addition I'll publish some tutorial about web tools and tecnologies to enforce the knowledge and submit it to community.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="gray-darken-3-text">Projects</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">SAREN</a></li>
+                    <li><a class="white-text" href="#!">INEF</a></li>
+                    <li><a class="white-text" href="#!">DOTA2CMG</a></li>
+                    <li><a class="white-text" href="#!">TENDEDERA</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="gray-darken-3-text">Popular Tutorials</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">MEAN STACK</a></li>
+                    <li><a class="white-text" href="#!">LARAVEL 5.1</a></li>
+                    <li><a class="white-text" href="#!">CODEIGNITER</a></li>
+                    <li><a class="white-text" href="#!">SUBLIME TEXT 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center-align">
+            Created by: <a class="black-text text-lighten-3" href="#">Cervantes.</a> Power by: MEAN Stack with Materialize CSS Framework
+        </div>
+    </div>
+</footer>

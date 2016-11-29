@@ -16,8 +16,12 @@ import 'rxjs';
 import 'lodash';
 import 'moment';
 
+// import 'materialize-css/dist/css/materialize.css';
+import 'materialize-css/dist/js/materialize.js';
+import 'materialize-loader';
+
 // bootstrap css
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap';
 
 import 'webpack-material-design-icons';

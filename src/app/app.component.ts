@@ -14,7 +14,6 @@ import '../../public/css/styles.css';
 })
 export class AppComponent implements AfterViewInit{
     constructor(private _elementRef : ElementRef){
-        debugger;
         let x = [{name:'Cervantes', age: 28},{name:'Ingrid', age: 15}];
         console.log(_.map(x, 'name'));
         console.log(moment(new Date()).format('hh:mm'));
@@ -22,7 +21,9 @@ export class AppComponent implements AfterViewInit{
 
     openModal() {
         console.log($('#modal1'));
-        $('#modal1').modal();
+        // $('#modal1-btn').click();
+        $('#staggered-test').css({display:'block'});
+        Materialize.showStaggeredList('#staggered-test');
     }
 
     changeColor(){
@@ -31,6 +32,10 @@ export class AppComponent implements AfterViewInit{
 
     ngAfterViewInit() {
         // Component views are initialized
-        console.log($.fn.jquery);        
+        console.log($.fn.jquery);
+        $('.button-collapse').sideNav();
+        $('.parallax').parallax();
+        $('.slider').slider();
+        $('.modal-trigger').leanModal();
     }
 }

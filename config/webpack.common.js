@@ -65,6 +65,10 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ['raw-loader', 'sass-loader?sourceMap']
             },
+            {
+                test: require.resolve('jquery'),
+                loader: 'expose?jQuery!expose?$'
+            }
         ]
     },
 
